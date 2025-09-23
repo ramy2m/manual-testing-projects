@@ -1,0 +1,56 @@
+ID,Title,Preconditions,Steps,Test Data,Expected result,Actual Result,,,,,,
+TC1-R1,new customer 1st purchase,new account made today with no loyalty card nor coupon,"1-Add an item to the cart.
+2-Complete to purchase
+
+",item id,Customer gets 15% discount,,,,,,,
+TC2-R1,new customer 2nd purchase,new account made today with no loyalty card nor coupon,"1-Add another item to the cart.
+2-Complete to purchase
+
+",item id,Customer gets 15% discount,,,R1,R2,R3,R4,R5
+TC3-R1,new customer with a loyalty card,"New account made today
+The customer has a loyalty card.","1-Add an item to the cart.
+2-Complete to purchase
+
+","item id
+loalty card id",Customer gets only 15% discount for being new,,condition:,,,,,
+TC4-R1,new customer with a coupon,"New account made today
+The customer has a coupon.","1-Add an item to the cart.
+2-Add coupon code
+3-Complete to purchase
+
+","item id
+coupon id",Customer gets only 15% discount for being new,,existing customer,F,T,T,T,T
+TC5-R1,new customer with both loyalty card and a coupon,"New account made today
+The customer has a loyalty card and a coupon.","1-Add an item to the cart.
+2-Add coupon code
+3-Complete to purchase
+
+","item id
+loyalty card id
+coupon id",Customer gets only 15% discount for being new,,coupon,Don't care,F,T,F,T
+TC6-R2,existing customer with no loyalty card nor coupon,"existing account made before 12 am within 24 hours
+the customer has no loyalty card nor coupon","1-Add an item to the cart.
+2-Complete to purchase
+
+",item id,Customer gets 0% discount,,loalty card,Don't care,F,F,T,T
+TC7-R4,existing customer with a loyalty card,"existing account made before 12 am within 24 hours
+The customer has a loyalty card.","1-Add an item to the cart.
+2-Complete to purchase
+
+","item id
+loalty card id",Customer gets a 10% discount for loyalty card,,Actions:,,,,,
+TC8-R3,existing customer with a coupon,"existing account made before 12 am within 24 hours
+The customer has a coupon.","1-Add an item to the cart.
+2-Add coupon code
+3-Complete to purchase
+
+","item id
+coupon id",Customer gets a 20% discount for the coupon,,Final Discount,15%,0,20%,10%,30%
+TC9-R5,existing customer with both loyalty card and a coupon,"existing account made before 12 am within 24 hours
+The customer has a loyalty card and a coupon.","1-Add an item to the cart.
+2-Add coupon code
+3-Complete to purchase
+
+","item id
+loyalty card id
+coupon id",Customer gets a 30% discount for both loyalty card and coupon,,,,,,,
