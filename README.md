@@ -73,6 +73,6 @@ _As a customer, I want to contact the website about a problem with my product._
 ## 👨‍💻 Author
 **Ramy Kotb**  
 - [GitHub Profile](https://github.com/ramy2m)  
-- [LinkedIn](https://www.linkedin.com/ramy2m)
+- [LinkedIn](https://www.linkedin.com/in/ramy2m)
 
 ---
